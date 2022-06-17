@@ -19,7 +19,7 @@ def load_facial_encodings_and_names_from_memory():
             known_face_encodings.append(pickle.load(fp)[0])
 
 def run_recognition():
-    video_capture = cv2.VideoCapture(1)
+    video_capture = cv2.VideoCapture(0)
     count_notification = 0
     face_locations = []
     face_encodings = []
