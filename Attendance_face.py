@@ -147,11 +147,11 @@ def run_recognition():
 
             check_in_hour = now.strftime("%H-%M-%S")
             check_in_day = now.strftime("%Y-%m-%d")
-            # mycursor = db.cursor()
-            # mycursor.execute(
-            #     "INSERT INTO Attendance_faces(id, FullName, Hour_check_in,Day_check_in) VALUES(%s, %s, %s, %s)",
-            #     (ID_User, name, check_in_hour, check_in_day))
-            # db.commit()
+            mycursor = db.cursor()
+            mycursor.execute(
+                "INSERT INTO Attendance_faces(id, FullName, Hour_check_in,Day_check_in) VALUES(%s, %s, %s, %s)",
+                (ID_User, name, check_in_hour, check_in_day))
+            db.commit()
 
             header = ['id', 'FullName', 'Hour_check_in', 'Day_check_in']
             data = [ID_User, name, check_in_hour, check_in_day]
