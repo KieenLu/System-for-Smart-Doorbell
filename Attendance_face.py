@@ -57,7 +57,7 @@ def findEncodings(images):
 
 known_face_encodings = findEncodings(images)
 def run_recognition():
-    video_capture = cv2.VideoCapture(1)
+    video_capture = cv2.VideoCapture(0)
     count_save =0
     face_locations = []
     face_encodings = []
