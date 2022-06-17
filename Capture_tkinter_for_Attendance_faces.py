@@ -5,17 +5,7 @@ import sys
 from PIL import Image, ImageTk
 import pyrebase
 import os
-config = {
 
-  "apiKey": "AIzaSyCbVXkvGT8OCeGTnogXENUyge2fq86ngTs",
-  "authDomain": "attendance-faces-824a8.firebaseapp.com",
-  "projectId": "attendance-faces-824a8",
-    "databaseURL": "https://smartdoorbellsystem-19df7-default-rtdb.asia-southeast1.firebasedatabase.app",
-  "storageBucket": "attendance-faces-824a8.appspot.com",
-  "messagingSenderId": "845411246113",
-  "appId": "1:845411246113:web:f28896bcbbdd3fde818360",
-
-}
 firebase  = pyrebase.initialize_app(config)
 storage = firebase.storage()
 
