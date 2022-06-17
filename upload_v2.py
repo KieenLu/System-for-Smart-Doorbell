@@ -14,24 +14,6 @@ import keys
 client = Client(keys.acc_sid, keys.auth_token)
 
 
-config = {
-    "apiKey": "AIzaSyBAO8n6tckNFK_2d2ZCHF_cBsY65QN9KHU",
-    "authDomain": "smartdoorbellsystem-19df7.firebaseapp.com",
-    "databaseURL": "https://smartdoorbellsystem-19df7-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "projectId": "smartdoorbellsystem-19df7",
-    "storageBucket": "smartdoorbellsystem-19df7.appspot.com",
-    "messagingSenderId": "616183915042",
-    "appId": "1:616183915042:web:8d990d0c0c5d92514de07b",
-    "measurementId": "G-FZT0QFSQD1"
-}
-
-device_id = '5cfbe20f-1ee9-40d7-a9b3-4624a787e31a'
-
-cred = credentials.Certificate('serviceAccountKey.json')
-firebase_admin.initialize_app(cred, {
-    'storageBucket': 'smartdoorbellsystem-19df7.appspot.com'
-})
-
 firebase = pyrebase.initialize_app(config)
 storage = firebase.storage()
 firebase = Firebase(config)
