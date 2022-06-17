@@ -63,10 +63,10 @@ def upload_file(fileName):
         requests.post(url, json=payload)
 
 
-    # message = client.messages.create(
-    #     body="Đây là tin nhắn cảnh báo từ SmartDoorbellSystem !"
-    #          "\nPhát hiện bất thường trước camera của bạn"
-    #          "\nHãy kiểm tra email của bạn hoặc có thể đăng nhập vào http://13.215.178.91:4000/dashboard/notifications để xem chi tiết về sự bất thường này.",
-    #     from_ = keys.twilio_number,
-    #     to= keys.my_phone_number
-    # )
+    message = client.messages.create(
+        body="Đây là tin nhắn cảnh báo từ SmartDoorbellSystem !"
+             "\nPhát hiện bất thường trước camera của bạn"
+             "\nHãy kiểm tra email của bạn hoặc có thể đăng nhập vào http://13.215.178.91:4000/dashboard/notifications để xem chi tiết về sự bất thường này.",
+        from_ = keys.twilio_number,
+        to= keys.my_phone_number
+    )
