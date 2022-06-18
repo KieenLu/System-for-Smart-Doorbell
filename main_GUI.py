@@ -29,7 +29,7 @@ Label(root, text='Khoa Kỹ Thuật Cơ Khí', font=("Times New Roman", 20, "bol
 
 Label(root, text='LUẬN VĂN TỐT NGHIỆP ĐẠI HỌC', font=("Times New Roman", 24, "bold"), bg='#000000', fg='white').place(relx = 0.5, rely = 0.275, anchor = CENTER)
 
-Label(root, text='HỆ THỐNG QUẢN LÝ NHÂN SỰ - AN NINH NGÔI NHÀ', font=("Times New Roman", 24, "bold"), bg='#000000', fg='white').place(relx = 0.5, rely = 0.375, anchor = CENTER)
+Label(root, text='CAMERA AI: HỆ THỐNG AN NINH - KIỂM SOÁT RA VÀO TỰ ĐỘNG', font=("Times New Roman", 24, "bold"), bg='#000000', fg='white').place(relx = 0.5, rely = 0.375, anchor = CENTER)
 
 Label(root, text='Sinh viên thực hiện : Lư Trung Kiên', font=("Times New Roman", 13), bg='#000000', fg='white').place(relx = 0.85, rely = 0.525, anchor = CENTER)
 Label(root, text='Mã số sinh viên : 1800549', font=("Times New Roman", 13), bg='#000000', fg='white').place(relx = 0.85, rely = 0.575, anchor = CENTER)
